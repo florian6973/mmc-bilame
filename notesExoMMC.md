@@ -41,6 +41,7 @@ Formule de Stoney
 - De nombreuses applications de cette formule :
 - Maintenant le modèle largement amélioré (https://monarch.qucosa.de/api/qucosa%3A18453/attachment/ATT-0/) : Berry 1988 essayer de relier $sigma_zz$ à la formule attendu
 
+https://www.gracesguide.co.uk/George_Gerald_Stoney
 
 14.3.2
 - Retrouve dans l'article de Stoney la fibre mince ($b=2/3d$)

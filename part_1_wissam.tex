@@ -1,0 +1,120 @@
+\subsection{Contraintes équi-biaxiales} 
+\begin{frame}
+    \frametitle{Etat de contraintes équi-biaxiales}
+        \item L'équilibre local s'écrit:
+        \item $div ~\underset{\sim}{\sigma} +\rho \underline{f} = \rho \underline{a}$
+        \item On néglige la pesanteur et on est en statique donc
+        \item $div~\underset{\sim}{\sigma}$
+        \item Pas de cisaillement
+        \item   $[\underset{\sim}{\sigma}]=\begin{pmatrix}\sigma_{11}(X_3)&0&0\\0&\sigma_{22}(X_3)&0\\0&0&\sigma_{33}(X_3)\end{pmatrix}$ 
+        
+\end{frame}   
+
+\begin{frame}
+    \frametitle{Etat de contraintes équi-biaxiales}
+        \item $div~\underset{\sim}{\sigma}~=~\sigma_{33,3}\underline{e_3}$
+        \item donc $\sigma_{33,3}=0$
+        \item donc $\sigma_{33}=constante$
+        \item or $\sigma_{33}(h_f) = \sigma_{33}(-h_s) = 0$
+        \item donc $\sigma_{33}=0$
+        \item Problème isotrope, contraintes équi-biaxiales:
+        \item $\sigma_{11}=\sigma_{22} $
+\end{frame}   
+\begin{frame}
+    \frametitle{Etat de contraintes équi-biaxiales}
+        \item $[\underset{\sim}{\sigma}]=\begin{pmatrix}\sigma(X_3)&0&0\\0&\sigma(X_3)&0\\0&0&0\end{pmatrix}$ 
+        \item La condition d'interface $[\underset{\sim}{\sigma}]\cdot\underline{e_3} = 0 $ est vérifiée
+\end{frame}   
+
+\subsection{Déformations des couches} 
+\begin{frame}
+    \frametitle{Déformation des couches}
+        \item Dans le substrat :
+        \item $\underset{\sim}{\epsilon}~=~\underset{\sim}{\epsilon}^{th} + \underset{\sim}{\epsilon}^{él}$
+        \item $\underset{\sim}{\epsilon}^{él}= \alpha_s(T-T_0)\underset{\sim}{1}$
+        \item Déformation liée aux contraintes : Loi d'élasticité linéarisée isotrope
+        \item $\underset{\sim}{\epsilon}=\frac{1+\nu_s}{\epsilon_s}\underset{\sim}{\sigma}-\frac{\nu_s}{\epsilon_s}(tr\underset{\sim}{\sigma})\underset{\sim}{1}$
+\end{frame}   
+
+\begin{frame}
+    \frametitle{Déformation des couches}
+        \item Dans le substrat :
+        \item $\underset{\sim}{\epsilon^{él}}=\begin{pmatrix}\frac{(1-\nu_s)\sigma_s}{\epsilon_s}&0&0\\0&\frac{(1-\nu_s)\sigma_s}{\epsilon_s}&0\\0&0&-\frac{2\nu_s\sigma_s}{\epsilon_s}\end{pmatrix}$
+        \item On pose $M_s = \frac{E_s}{1-\nu_s}$
+        
+\end{frame}  
+
+\begin{frame}
+    \frametitle{Déformation des couches}
+        \item Finalement :
+        \item $\underset{\sim}{\epsilon^s}=\begin{pmatrix}\alpha_s(T-T_0)+\frac{\sigma_s}{M_s}&0&0\\0&\alpha_s(T-T_0)+\frac{\sigma_s}{M_s}&0\\0&0&\alpha_s(T-T_0)-\frac{2\nu_s\sigma_s}{\epsilon_s}\end{pmatrix}$
+        \item Avec le même raisonnement, dans la couche supérieure fine:
+        \item $\underset{\sim}{\epsilon^f}=\begin{pmatrix}\alpha_f(T-T_0)+\frac{\sigma_f}{M_f}&0&0\\0&\alpha_f(T-T_0)+\frac{\sigma_f}{M_f}&0\\0&0&\alpha_f(T-T_0)-\frac{2\nu_s\sigma_f}{\epsilon_f}\end{pmatrix}$
+        
+\end{frame} 
+
+\subsection{Equations de compatibilité} 
+\begin{frame}
+    \frametitle{Equations de compatibilité}
+        \item $\epsilon_{22,33}=0$
+        \item $\epsilon_{11,33}=0$
+        \item donc $\sigma_s''(X_3)=0$ et $\sigma_f''(X_3)=0$
+        \item $\sigma_s(X_3)=a_sX_3+b_s$
+        \item $\sigma_f(X_3)=a_fX_3+b_f$
+        \item avec $a_s, b_s, a_f, b_f$ à déterminer
+        
+\end{frame}  
+
+\subsection{Déplacements} 
+\begin{frame}
+    \frametitle{Déplacements}
+        \item Calcul de la rotation infinitésimale $\underset{\sim}{\omega}$
+        \item $\omega_{ij,k}=\epsilon_{ik,j}-\epsilon_{jk,i}$
+        \item $\omega_{12}=0,\omega_{13}=\frac{a}{M}X_1,\omega_{23}=\frac{a}{M}X_2$
+        \item $[\underset{\sim}{\omega}]=\begin{pmatrix}0&0&\frac{aX_1}{M}\\0&0&\frac{aX_2}{M}\\-\frac{aX_1}{M}&-\frac{aX_2}{M}&0\end{pmatrix}$
+        
+        
+\end{frame}  
+\begin{frame}
+    \frametitle{Déplacements}
+        \item Détermination de  $\underline{u^f}$
+        \item $u_{i,j}^f=\epsilon_{ij}+\omega_{ij}$
+        \item $u_1^s=(\alpha_f(T-T_0)+\frac{b_f}{M_f})X_1+\frac{a_fX_1X_3}{M_f}$
+        \item $u_2^s=(\alpha_f(T-T_0)+\frac{b_f}{M_f})X_2+\frac{a_fX_2X_3}{M_f}$
+        \item $u_3^s=(\alpha_f(T-T_0)-\frac{2b_f\nu}{E})X_3-\frac{a_f\nu}{E}X_3^2-\frac{a_f}{2M_f}(X_1^2+X_2^2)$
+        \item De même pour $\underline{u^s}$
+
+\end{frame}  
+
+\subsection{Contraintes dans chaque couche} 
+\begin{frame}
+    \frametitle{Contraintes dans chaque couche}
+        \item Continuité du déplacement à l'intersection entre les 2 couches:
+        \item $\underline{u^s}(X_1,X_2,0)=\underline{u^f}(X_1,X_2,0)$
+        \item $\forall X_1,(\alpha_f(T-T_0)+\frac{b_f}{M_f})X_1 = (\alpha_s(T-T_0)+\frac{b_s}{M_s})X_1$
+        \item et $\forall X_1,X_2, -\frac{a_s}{2M_s}(X_1^2+X_2^2)=-\frac{a_f}{2M_f}(X_1^2+X_2^2)$
+        \item donc $\alpha_f(T-T_0)+\frac{b_f}{M_f}=\alpha_s(T-T_0)+\frac{b_s}{M_s}$
+        \item On notera C ce coefficient
+        \item et $\frac{a_f}{M_f}=\frac{a_s}{M_s}$
+        \item On notera A ce coefficient
+
+\end{frame} 
+\begin{frame}
+    \frametitle{Contraintes dans chaque couche}
+        \item $\sigma_{11}^s=M_s(AX_3+C-\alpha_s(T-T_0))$
+        \item $\sigma_{11}^f=M_f(AX_3+C-\alpha_f(T-T_0))$
+        \item Saut de contrainte:
+        \item $\sigma_{11}^f(0)-\sigma_{11}^s(0) = (M_f-M_s)C-(M_f\alpha_f-M_s\alpha_s)(T-T_0)$
+        \item C'est licite; seul le saut de $\sigma_{13},\sigma_{23},\sigma_{33}$ est nul
+
+\end{frame} 
+
+\begin{frame}
+    \frametitle{Contraintes dans chaque couche}
+        \item En reportant A et C dans l'expression du déplacement:
+        \item $u_1=AX_1X_3+CX_1$
+        \item $u_2=AX_2X_3+CX_2$
+        \item $u_3= -A(\frac{X_1^2}{2}+\frac{X_2^2}{2})-\frac{2\nu}{1-\nu}(A\frac{X_3^2}{2}+CX_3)+\frac{1+\nu}{1-\nu}\alpha(T-T_0)X_3$
+        \Reste à déterminer A et C
+
+\end{frame} 

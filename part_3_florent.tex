@@ -31,7 +31,7 @@
     \end{figure}
 
     \begin{itemize}
-        \item Supposons que $\frac{h_s}{h_f} << 1$
+        \item Supposons que $\frac{h_f}{h_s} \ll 1$
         \item Quelle est la courbure $c$ prise par l'ensemble ?
     \end{itemize}
     
@@ -50,7 +50,7 @@
     \frametitle{La formule de Stoney (1909)}
 
     \begin{itemize}
-        \item $c = 6\frac{M_fh_f}{M_sh_s^2}(\alpha_s-\alpha_f)(T-T_0)$ si $M_fh_f << M_sh_s$ 
+        \item $c = 6\frac{M_fh_f}{M_sh_s^2}(\alpha_s-\alpha_f)(T-T_0)$ si $M_fh_f \ll M_sh_s$ 
         \item Dans les autres directions ? Courbure nulle ou parabolique
         \item Permet de prévoir la déformation de l'ensemble, en combinant ls caractéristiques géométriques et les propriétés mécaniques des couches
     \end{itemize}
@@ -96,8 +96,9 @@
 \begin{frame}
 \frametitle{Expérience sommaire : résultats}
     \begin{itemize}
-        \item Une des deux faces se dilate sous l'effet de la chaleur
+        \item Les se dilatent différemment sous l'effet de la chaleur
         \item On remarque que c'est l'aluminium qui est sur la face externe de la courbure. 
+        \item On est bien dans le cas des petites déformations avec $||Grad(\underline{u})|| \ll 1$.
         \item On peut chercher à vérifier le signe de la courbure dans la formule de Stoney, même si la deuxième hypothèse $M_f h_f << M_s h_s$ n'est pas vraiment vérifiée :
         \begin{itemize}    
             \item $T-T_0 > 0$
@@ -118,8 +119,8 @@
 \begin{itemize}
     \item Contrainte moyenne : $\bar{\sigma}_{11}=\frac{1}{h}\int\sigma_{11}\rm{d}X_3$
     \item Développons au premier ordre $\Delta$, $C$ et $A$
-    \item $\sigma_{11}^f=M_f(AX_3+C-\alpha_f(T-T_0))$
-    \item $\sigma_{11}^s=M_s(AX_3+C-\alpha_s(T-T_0))$
+    \item $\sigma_{11}^f=M_f(AX_3+C-\alpha_f(T-T_0)) \approx M_f (\alpha_s - \alpha_f)(T-T_0)$
+    \item $\sigma_{11}^s=M_s(AX_3+C-\alpha_s(T-T_0)) \approx \frac{M_fh_f}{M_sh_s} (\alpha_f-\alpha_s)(T-T_0)(6\frac{X_3}{h_s}+4)$
 \end{itemize}
 \end{frame}
 
